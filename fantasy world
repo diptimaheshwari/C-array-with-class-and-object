@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+class character{
+    public:
+    
+    string name[3]= {"harry", "hermioni", "ronald"};
+    int age[3]= {11, 14, 13};
+    string race[3]= {"wizard", "witch", "wizard"};
+    int height[3]= {4, 5, 5};
+
+    
+    void PrintDetails(string c){
+        for(int i=0; i<3; i++){
+            if(name[i]==c){
+                cout<<"name:"<<name[i]<<endl;
+                cout<<"age:"<<age[i]<<endl;
+                cout<<"race:"<<race[i]<<endl;
+                cout<<"height:"<<height[i]<<endl;
+                cout<<"attackpower:"<<height[i]*10<<endl;
+        
+    }
+    } 
+    }
+
+};
+       
+ int main(){
+    character heroes;
+    cout<<"fantasy world has started!"<<endl;
+
+   while (true){
+       cout<<"enter hero's name:"<<endl;
+        string a;
+        cin>>a;
+  
+     heroes.PrintDetails(a);
+   }
+    return 0;
+}
+    
